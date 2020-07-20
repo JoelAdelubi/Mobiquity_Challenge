@@ -16,10 +16,9 @@ jobs:
             coverage run -m pytest tests/test_comments.py
             coverage report -m
             coverage html
-          name: Test
-          
+          name: Test       
        - store_test_results:
-          path: test-results
+           path: test-results
 
 workflows:
   main:
