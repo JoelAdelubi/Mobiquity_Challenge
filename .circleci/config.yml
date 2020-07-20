@@ -17,8 +17,6 @@ jobs:
             coverage report -m
             coverage html
           name: Test       
-       - store_test_results:
-           path: test-results
 
 workflows:
   main:
