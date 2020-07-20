@@ -15,6 +15,7 @@ jobs:
         - python/install-deps
         - python/save-cache
       - run:
+          name: Run Tests
           command: |
             python3 -m pytest tests/test_comments.py
             $HOME/.local/bin/coverage run -m pytest
