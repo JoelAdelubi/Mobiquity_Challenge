@@ -15,6 +15,9 @@ jobs:
           command: |
             python3 -m pytest tests/test_comments.py
           name: Test
+       - store_test_results:
+            path: test-results
+
 
 workflows:
   main:
