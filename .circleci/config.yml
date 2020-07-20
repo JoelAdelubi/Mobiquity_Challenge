@@ -11,9 +11,9 @@ jobs:
     - run:
         name: Setup testing environment
         command: |
-        - python/load-cache
-        - python/install-deps
-        - python/save-cache
+           python/load-cache
+           python/install-deps
+           python/save-cache
       - run:
           name: Run Tests
           command: |
