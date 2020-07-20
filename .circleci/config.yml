@@ -7,14 +7,14 @@ jobs:
   build-and-test:
     executor: python/default
     steps:
-      - checkout
-      - run:
+    - checkout
+    - run:
         name: Setup testing environment
         command: |
           - python/load-cache
           - python/install-deps
           - python/save-cache
-      - run:
+     - run:
           command: |
             python3 -m pytest tests/test_comments.py
           name: Test
