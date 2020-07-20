@@ -12,7 +12,12 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./manage.py test
+          command: |
+            python3 -m pytest tests/test_comments.py
+            python3 -m coverage run -m pytest tests/test_comments.py
+            python3 -m coverage report -m
+            python3 -m coverage html
+            cd tests/htmlcov/
           name: Test
 
 workflows:
