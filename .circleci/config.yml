@@ -14,9 +14,9 @@ jobs:
       - run:
           command: |
             python3 -m pytest tests/test_comments.py
-            coverage run -m pytest
-            coverage report
-            coverage html
+            ./coverage run -m pytest
+            ./coverage report
+            ./coverage html
           name: Test
 
 workflows:
