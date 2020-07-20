@@ -13,10 +13,8 @@ jobs:
       - python/save-cache
       - run:
           command: |
-            coverage run -m pytest tests/test_comments.py
-            coverage report -m
-            coverage html
-          name: Test       
+            python3 -m pytest tests/test_comments.py
+          name: Test
 
 workflows:
   main:
