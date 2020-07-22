@@ -1,6 +1,5 @@
 import unittest
 import json
-import os
 from tests.request_handler import RequestHandler
 from tests.helpers import Helpers
 
