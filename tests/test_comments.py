@@ -18,12 +18,6 @@ class TestSet(unittest.TestCase):
         global post_id
         post_id = Helpers.json_parser(self, post_response.text, 'id')
 
-        """ for comment_id in post_id:
-            comment_response = RequestHandler.get_request(self, endpoint2 + str(comment_id))
-            comment_emails = Helpers.json_parser(self, comment_response.text, 'email')
-            for commentemail in comment_emails:
-                self.assertTrue(Helpers.is_email_valid(self, commentemail)) """
-
     def test_validate_comment_emails(self):
         for comment_id in post_id:
             comment_response = RequestHandler.get_request(self, endpoint2 + str(comment_id))
