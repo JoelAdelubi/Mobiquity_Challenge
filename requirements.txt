@@ -1,5 +1,4 @@
 jsonschema
-pytest
 requests
 coverage
 
