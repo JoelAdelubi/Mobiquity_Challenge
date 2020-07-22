@@ -1,10 +1,8 @@
 import requests
 import json
 import re
-import pprint
 import unittest
 import re
-from jsonschema import validate
 
 endpoint1 = "https://jsonplaceholder.typicode.com/users/?username=Delphine"
 endpoint2 = "https://jsonplaceholder.typicode.com/comments?postId=86"
