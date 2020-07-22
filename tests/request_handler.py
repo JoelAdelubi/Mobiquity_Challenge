@@ -1,7 +1,6 @@
 import requests
 import re
 import unittest
-import re
 
 endpoint1 = "https://jsonplaceholder.typicode.com/users/?username=Delphine"
 endpoint2 = "https://jsonplaceholder.typicode.com/comments?postId=86"
