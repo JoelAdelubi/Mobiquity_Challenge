@@ -13,7 +13,6 @@ jobs:
       - python/save-cache
       - run:
           command: |
-            python3 -m unittest tests/test_comments.py
             python3 -m coverage run -m unittest tests/test_comments.py
             python3 -m coverage report -m
             python3 -m coverage html
